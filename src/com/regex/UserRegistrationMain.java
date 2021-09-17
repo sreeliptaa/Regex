@@ -20,6 +20,7 @@ public class UserRegistrationMain {
         userRegistration.userFirstName();
         userRegistration.userLastName();
         userRegistration.userEmail();
+        userRegistration.userPhoneNumber();
     }
 
 }
