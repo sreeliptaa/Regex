@@ -19,6 +19,7 @@ public class UserRegistrationMain {
         //Calling Methods
         userRegistration.userFirstName();
         userRegistration.userLastName();
+        userRegistration.userEmail();
     }
 
 }
