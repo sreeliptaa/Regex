@@ -22,6 +22,7 @@ public class UserRegistrationMain {
         userRegistration.userEmail();
         userRegistration.userPhoneNumber();
         userRegistration.userPassword();
+        SampleEmails.sampleEmailCheck();
     }
 
 }
