@@ -1,5 +1,6 @@
 package com.regex;
 
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -96,4 +97,25 @@ public class Validater {
             userRegistration.userPhoneNumber(); //calling the method to ask user
         }
     }
+
+    /**
+     * Ability to validate the user Password with the condition
+     * Condition: Password should be min. of 8 characters
+     * If it doesn't matches, asks user again to enter the password by calling method
+     *
+     * @param details
+     */
+    public static void CheckPassword(Details details) {
+        String check = "^[a-zA-Z]{8,}$"; // Condition
+        Pattern pattern = Pattern.compile(check); // Assigning condition to compile
+        Matcher matcher = pattern.matcher(details.getPassword()); // Checking for Matching
+        boolean result = matcher.matches(); // Match result: True or False
+        if (result) {
+            System.out.println("Password '" + details.getPassword() + "' is Valid and Saved to details");
+        } else {
+            System.out.println("\nInvalid Password.\nUse 8 or more characters");
+            userRegistration.userPassword(); // calling the method to ask user
+        }
+    }
+    
 }

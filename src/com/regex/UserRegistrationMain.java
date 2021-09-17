@@ -21,6 +21,7 @@ public class UserRegistrationMain {
         userRegistration.userLastName();
         userRegistration.userEmail();
         userRegistration.userPhoneNumber();
+        userRegistration.userPassword();
     }
 
 }
